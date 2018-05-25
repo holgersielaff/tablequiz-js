@@ -1,0 +1,35 @@
+{
+  "name": "tablequiz-js",
+  "version": "1.0.0",
+  "description": "A decentralized table quiz collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 12345 public",
+    "compile-dev": "browserify src/app.js -o public/js/app.min.js -d",
+    "compile": "browserify src/app.js -o public/js/app.js -d && uglifyjs public/js/app.js -c 2> /dev/null > public/js/app.min.js && rm -f public/js/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/holgersielaff/tablequiz-js.git"
+  },
+  "keywords": [
+    "Tablequiz"
+  ],
+  "author": "Holger Sielaff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/holgersielaff/tablequiz-js/issues"
+  },
+  "homepage": "https://github.com/holgersielaff/tablequiz-js#readme",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "http-server": "^0.10.0",
+    "ipfs": "^0.25.2",
+    "y-array": "^10.1.4",
+    "y-ipfs-connector": "^1.2.1",
+    "y-memory": "^8.0.9",
+    "y-text": "^9.5.1",
+    "yjs": "^12.3.3"
+  }
+}

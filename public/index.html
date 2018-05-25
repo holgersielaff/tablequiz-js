@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tablequiz</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<!--        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>-->
+        <style type="text/css">
+            .mt-10{
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            body{
+                padding-top:1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <textarea class="form-control" id="textfield" style="height:350px;"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 offset-sm-4">
+                    <form action="?" method="post">
+                        <div class="row mt-10 h3">
+                            <div class="col-sm-3">
+                            </div>
+                            <div class="col-sm-9">
+                                Tablequiz
+                            </div>
+                        </div>
+                        <div class="row mt-10">
+                            <div class="col-sm-3">
+                                Frage
+                            </div>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="question" placeholder="Frage" />
+                            </div>
+                        </div>
+                        <div class="row mt-10">
+                            <div class="col-sm-3">
+                                Antwort
+                            </div>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="anwser" placeholder="Antwort" />
+                            </div>
+                        </div>
+                        <div class="row mt-10">
+                            <div class="col-sm-3">
+                                Punkte
+                            </div>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="number" name="points" value="1" />
+                            </div>
+                        </div>
+                        <div class="row mt-10">
+                            <div class="col-sm-3">
+                            </div>
+                            <div class="col-sm-9">
+                                <input class="btn btn-success" name="submit" type="submit" value="Speichern" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
+
+
